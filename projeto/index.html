@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <title>DrivenEats</title>
+</head>
+<body>
+    <header>
+        <div>
+            <h1>DrivenEats</h1>
+            <h4>Sua comida em 6 minutos</h4>
+        </div>
+    </header>
+
+    <!--Início do menu-->
+    <main>
+        <div class="menu">
+            <h2>Primeiro, seu prato</h2>
+            <div class="container selecao1">
+                <div class="principal escolha1" onclick="selecionarprato(this)">
+                <img src="/imagens/chicken.png">
+                <h3 class="item">Frango Yin Yang</h3>
+                <p>Um pouco de batata, um pouco de salada</p>
+                <h5 class="money">R$ 14,90</h5>
+                <div class="arrow"><ion-icon name="checkmark-circle"></ion-icon></div>
+            </div>
+            <div class="principal escolha2" onclick="selecionarprato(this)">
+                <img src="/imagens/tacobell.png">
+                <h3 class="item">Taco Bell</h3>
+                <p>Com aquela batata diferenciada</p>
+                <h5 class="money">R$ 21,80</h5>
+                <div class="arrow"><ion-icon name="checkmark-circle"></ion-icon></div>
+            </div>
+            <div class="principal escolha3" onclick="selecionarprato(this)">
+                <img src="/imagens/sushi.png">
+                <h3 class="item">Barca sushi</h3>
+                <p>Kani, salmão e atum e muito mais </p>
+                <h5 class="money">R$ 55,00</h5>
+                <div class="arrow"><ion-icon name="checkmark-circle"></ion-icon></div>
+            </div>
+            <div class="principal escolha4" onclick="selecionarprato(this)">
+                <img src="/imagens/pizza.png">
+                <h3 class="item">Pizza família</h3>
+                <p>Tradicionais, especiais e doces</p>
+                <h5 class="money">R$ 40,00</h5>
+                <div class="arrow"><ion-icon name="checkmark-circle"></ion-icon></div>
+            </div>
+            </div>
+            <h2 class="bebida">Agora, sua bebida</h2>
+            <div class="container selecao2">
+                <div class="principal escolha5" onclick="selecionarbebida(this)">
+                <img src="/imagens/refri.png">
+                <h3 class="item">Coquinha gelada</h3>
+                <p>Lata 350ml, gelo e limão</p>
+                <h5 class="money">R$ 4,90</h5>
+                <div class="arrow"><ion-icon name="checkmark-circle"></ion-icon></div>
+            </div>
+            <div class="principal escolha6" onclick="selecionarbebida(this)">
+                <img src="/imagens/suco.png">
+                <h3 class="item">Suquinho</h3>
+                <p>Temos mais de 10 opções</p>
+                <h5 class="money">R$ 6,90</h5>
+                <div class="arrow"><ion-icon name="checkmark-circle"></ion-icon></div>
+            </div>
+            <div class="principal escolha7" onclick="selecionarbebida(this)">
+                <img src="/imagens/beats.png">
+                <h3 class="item">Skol Beats</h3>
+                <p>Descubra o seu lado do zodíaco</p>
+                <h5 class="money">R$ 7,00</h5>
+                <div class="arrow"><ion-icon name="checkmark-circle"></ion-icon></div>
+            </div>
+            <div class="principal escolha8" onclick="selecionarbebida(this)">
+                <img src="/imagens/water.png">
+                <h3 class="item">Água Ama</h3>
+                <p>Para fugir do calor do Qatar</p>
+                <h5 class="money">R$ 2,00</h5>
+                <div class="arrow"><ion-icon name="checkmark-circle"></ion-icon></div>
+            </div>
+            </div>
+            <h2 class="sobremesa">Por fim, sua sobremesa</h2>
+            <div class="container selecao3">
+                <div class="principal escolha9" onclick="selecionarsobremesa(this)">
+                <img src="/imagens/pudim.png">
+                <h3 class="item">Pudim</h3>
+                <p>Calda de caramelo especial</p>
+                <h5 class="money">R$ 7,90</h5>
+                <div class="arrow"><ion-icon name="checkmark-circle"></ion-icon></div>
+            </div>
+            <div class="principal escolha10" onclick="selecionarsobremesa(this)">
+                <img src="/imagens/cake.png">
+                <h3 class="item">Bolo de chocolate</h3>
+                <p>Receita especial da vovó</p>
+                <h5 class="money">R$ 36,00</h5>
+                <div class="arrow"><ion-icon name="checkmark-circle"></ion-icon></div>
+            </div>
+            <div class="principal escolha11" onclick="selecionarsobremesa(this)">
+                <img src="/imagens/sorvete.png">
+                <h3 class="item">Sorvete</h3>
+                <p>Frutas, chocolate, flocos</p>
+                <h5 class="money">R$ 27,89</h5>
+                <div class="arrow"><ion-icon name="checkmark-circle"></ion-icon></div>
+            </div>
+            <div class="principal escolha12" onclick="selecionarsobremesa(this)">
+                <img src="/imagens/doce.png">
+                <h3 class="item">Cocada nordestina</h3>
+                <p>Doce de leite cremosoooo</p>
+                <h5 class="money">R$ 9,70</h5>
+                <div class="arrow"><ion-icon name="checkmark-circle"></ion-icon></div>
+            </div>
+            </div>
+        </div>
+        <footer>
+            <div class="botao">
+            <button class="pedido" onclick="fecharpedido()">Selecione os 3 itens
+                <br>para fechar o pedido</br></button>
+            </div>
+        </footer>
+    </main>
+    
+
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
